@@ -195,7 +195,7 @@
    (shift-select-shapes id nil))
 
   ([id objects]
-   (ptk/reify ::shift-select-shapes
+   (ptk/reify ::shift-select-shapes-2
      ptk/UpdateEvent
      (update [_ state]
        (let [objects (or objects (wsh/lookup-page-objects state))
